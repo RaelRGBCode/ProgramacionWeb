@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+body,.cont{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cont{
+    width: 280px;
+    height: 200px;
+    background-color: black;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.cont__color{
+    color: white;
+    font-weight: bold;
+    }
+    
+    .cont__boton{
+        padding: 14px 28px;
+        border-radius: 10px;
+        color: black;
+        background-color: aquamarine; 
+        cursor: pointer;
+        font-size: 16px;
+    }
