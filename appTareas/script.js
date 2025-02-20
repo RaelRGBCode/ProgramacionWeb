@@ -3,16 +3,15 @@ const boton=document.querySelector(".boton");
 const tareas=document.querySelector(".listaTareas");
 const formulario=document.querySelector(".formulario");
 
-localStorage.removeItem("tarea");
+
 formulario.addEventListener("submit",(e)=>{
+let guardarTarea;
 e.preventDefault();
 const valor=entrada.value;
 recibirTarea(valor);
-
+localStorage.set()
 e.target.reset();//Lo que hace es dejar en blanco los input
 });
-
-
 
 function recibirTarea(value){
 let tareaNueva=document.createElement("li");
@@ -48,5 +47,4 @@ function elminarTarea(elemento){
     elemento.remove();
     mensaje();
     })
-  
 }
